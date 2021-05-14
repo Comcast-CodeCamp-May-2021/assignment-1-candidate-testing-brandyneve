@@ -65,7 +65,6 @@ for (let i= 0; i< candidateAnswers.length; i++){
   }else{
   console.log('>>> Status: FAILED <<<')}
 
-  
   return grade;
 }
 
