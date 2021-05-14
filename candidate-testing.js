@@ -57,7 +57,7 @@ for (let i= 0; i< candidateAnswers.length; i++){
   console.log(`${(questions.indexOf(questions[i])+1)}) ${questions[i]}\nYour Answer: ${candidateAnswers[i]}\nCorrect Answer: ${correctAnswers[i]}\n`)}
   
  // return actual grade for quiz after asking and checking each question
-  grade = ((numberCorrect/numberQuestions)*100);
+  grade = (numberCorrect/numberQuestions)*100;
   //create new variables for number of correct answers, and number of questions, divide them and then *100
   console.log(`>>> Overall Grade: ${grade}% (${numberCorrect} of ${numberQuestions} responses correct) <<<`);
   if (grade >= 80){
