@@ -45,6 +45,7 @@ function gradeQuiz(candicateAnswer){
 // for loop to iterate across answers and correct answers
 //Replace the basic feedback from TODO 1.2c with a template literal that displays each of the candidate's responses in addition to the corresponding correct answers.
 let numberCorrect = 0;
+let grade = 0;
 const numberQuestions = questions.length;
 
 for (let i= 0; i< candidateAnswers.length; i++){
@@ -56,7 +57,7 @@ for (let i= 0; i< candidateAnswers.length; i++){
   console.log(`${(questions.indexOf(questions[i])+1)}) ${questions[i]}\nYour Answer: ${candidateAnswers[i]}\nCorrect Answer: ${correctAnswers[i]}\n`)}
   
  // return actual grade for quiz after asking and checking each question
-  let grade = ((numberCorrect/numberQuestions)*100);
+  grade = ((numberCorrect/numberQuestions)*100);
   //create new variables for number of correct answers, and number of questions, divide them and then *100
   console.log(`>>> Overall Grade: ${grade}% (${numberCorrect} of ${numberQuestions} responses correct) <<<`);
   if (grade >= 80){
