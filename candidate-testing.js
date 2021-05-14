@@ -39,7 +39,7 @@ function askQuestion() {
 
 
 // not currently accepting a parameter
-function gradeQuiz(candicateAnswer){
+function gradeQuiz(candidateAnswers){
 /*console.log(`Candidate Name: ${candidateName}`)*/
   // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
 // for loop to iterate across answers and correct answers
@@ -51,7 +51,7 @@ const numberQuestions = questions.length;
 for (let i= 0; i< candidateAnswers.length; i++){
   
   if (candidateAnswers[i].toLowerCase() ===  correctAnswers[i].toLowerCase()){
-    (numberCorrect= numberCorrect +1);
+    numberCorrect= numberCorrect +1;
   }
 
   console.log(`${(questions.indexOf(questions[i])+1)}) ${questions[i]}\nYour Answer: ${candidateAnswers[i]}\nCorrect Answer: ${correctAnswers[i]}\n`)}
